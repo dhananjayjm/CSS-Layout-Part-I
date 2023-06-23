@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clear Floats Example</title>
+  <style>
+    /* Float styles */
+.float-left {
+  float: left;
+  width: 50%;
+  background-color: lightblue;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Float styles */
+.float-left {
+  float: left;
+  width: 50%;
+  background-color: lightblue;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Clearfix method */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* 
+
+To clear the floats, we apply the "clearfix" class to the container. 
+
+In the CSS, the .clearfix::after pseudo-element creates a new, empty element after the container. 
+The display: table; property ensures this new element has block-level formatting, and the clear: both; property clears the floats, ensuring that elements following the container (like the paragraph) are not affected by the floated child divs.
+
+*/
+
+
+/* Non-floated content styling */
+p {
+  background-color: lightgreen;
+  padding: 20px;
+}
+
+
+/* Non-floated content styling */
+p {
+  background-color: lightgreen;
+  padding: 20px;
+}
+
+  </style>
+</head>
+<body>
+  <div class="container clearfix">
+    <div class="float-left">Float 1</div>
+    <div class="float-left">Float 2</div>
+  </div>
+  <p>Content after the container</p>
+</body>
+</html>

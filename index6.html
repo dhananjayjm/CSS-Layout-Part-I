@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nested Block-Level Elements Example</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <style>
+      * {
+        border: 1px solid red;
+      }
+      a {
+        color: blue;
+        text-decoration: underline;
+        display: inline-block;
+      }
+
+      div {
+        background-color: yellow;
+        padding: 10px;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Nested Block-Level Elements Example</h1>
+    <p>
+      This is a paragraph with a
+      <a href="#"
+        >link to another page
+        <div>that includes a block-level element.</div></a
+      >
+    </p>
+  </body>
+</html>

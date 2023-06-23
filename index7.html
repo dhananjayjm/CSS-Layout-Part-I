@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        padding: 5px;
+        border: 1px solid blue;
+        background-color: yellow;
+      }
+
+      .inline {
+        display: inline;
+      }
+
+      .inline-block {
+        display: inline-block;
+      }
+
+      .block {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>The display Property</h1>
+    <h2>display: inline</h2>
+    <div>
+      <p>
+        The element generates one or more inline element boxes that do not
+        generate line breaks before or after themselves. In normal flow, the
+        next element will be on the same line if there is space.
+      </p>
+      <p>
+        <span class="box inline">This</span>
+        <span class="box inline">is</span> an example of using inline
+        elements for displaying images or icons next to text.
+      </p>
+    </div>
+    <h2>display: inline-block</h2>
+    <div>
+      <p>
+        Inline-block elements are similar to inline elements, but they can have
+        a width and height, as well as padding and margin properties. This makes
+        them useful for displaying elements side by side, without disrupting the
+        flow of text.
+      </p>
+      <p>
+        <span class="box inline-block">This</span>
+        <span class="box inline-block">is</span> an example of using inline-block
+        elements for displaying images or icons next to text.
+      </p>
+    </div>
+    <h2>display: block</h2>
+    <div>
+      <p>
+        Block elements take up the full width of their container and start on a
+        new line. They are useful for creating distinct sections of content on a
+        page, such as headings, paragraphs, or lists.
+      </p>
+      <p>
+        <span class="box block">This</span> <span class="box block">is</span> an
+        example of using block elements for creating sections of content with a
+        consistent visual style.
+      </p>
+    </div>
+  </body>
+</html>
